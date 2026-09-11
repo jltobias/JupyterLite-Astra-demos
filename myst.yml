@@ -1,0 +1,16 @@
+version: 1
+project:
+  title: JupyterLite Astra Demos
+  description: Browser-executable educational notebooks inspired by selected demos cataloged in Awesome GPT-6 Astra.
+  github: jltobias/JupyterLite-Astra-demos
+  toc:
+    - file: content/index.md
+      children:
+        - file: content/notebooks/01_aquarium_motion.ipynb
+        - file: content/notebooks/02_robot_duel.ipynb
+        - file: content/notebooks/03_procedural_train.ipynb
+        - file: content/notebooks/04_glass_drying.ipynb
+        - file: content/notebooks/05_model_railroad.ipynb
+site:
+  template: book-theme
+  title: JupyterLite Astra Demos
