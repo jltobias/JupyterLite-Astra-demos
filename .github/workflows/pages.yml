@@ -6,11 +6,10 @@ on:
   workflow_dispatch:
 
 env:
-  # GitHub project sites are served beneath /<repository-name>.
   BASE_URL: /${{ github.event.repository.name }}
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -24,7 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Current Jupyter Book / MyST site tooling expects a modern Node runtime.
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -40,7 +38,22 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Build JupyterBook
-        run: jupyter book build --html
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          jupyter book build --html > book-build.log 2>&1
+          status=$?
+          cat book-build.log
+          if [ "$status" -ne 0 ]; then
+            encoded=$(base64 -w 0 book-build.log)
+            gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/diagnostics/book-build-${GITHUB_RUN_ID}.log" \
+              -f message="Capture Jupyter Book build log for run ${GITHUB_RUN_ID}" \
+              -f content="$encoded" \
+              -f branch="astra-jupyterlite-book"
+            exit "$status"
+          fi
 
       - name: Build JupyterLite
         run: >-
