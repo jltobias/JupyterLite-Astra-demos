@@ -5,6 +5,7 @@ project:
   github: jltobias/JupyterLite-Astra-demos
   toc:
     - file: content/index.md
+    - title: Demos
       children:
         - file: content/notebooks/01_aquarium_motion.ipynb
         - file: content/notebooks/02_robot_duel.ipynb
