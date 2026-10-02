@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Six interactive spatial experiments: terrain, city, globe, ocean, voxels and chaos. Learn by changing the world.">
+  <title>Astra World Lab · JupyterLite Astra Demos</title>
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">✳</span> ASTRA <span>WORLD LAB</span></a>
+    <nav aria-label="Main navigation"><a href="../lite/lab/index.html?path=00_start_here.ipynb">Learning guide ↗</a><a href="https://github.com/jltobias/JupyterLite-Astra-demos">Source ↗</a></nav>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A FIELD GUIDE TO POSSIBLE WORLDS</p><h1>See the idea.<br><em>Change the world.</em></h1></div><p>Maps become landscapes. Rules become motion.<br> Explore six small worlds, then open the code<br> and discover what makes them work.</p></section>
+    <div class="workspace">
+      <aside>
+        <p class="eyebrow">CHOOSE AN EXPERIMENT</p>
+        <div id="scenes" class="scene-list" role="group" aria-label="Experiments">
+          <button data-scene="terrain"><span>01</span> Terrain & water <b>↗</b></button>
+          <button data-scene="city"><span>02</span> Procedural city <b>↗</b></button>
+          <button data-scene="globe"><span>03</span> Globe & routes <b>↗</b></button>
+          <button data-scene="ocean"><span>04</span> Ocean in motion <b>↗</b></button>
+          <button data-scene="voxel"><span>05</span> Voxel island <b>↗</b></button>
+          <button data-scene="chaos"><span>06</span> Lorenz attractor <b>↗</b></button>
+        </div>
+        <div class="experiment"><p class="eyebrow">PREDICT, THEN EXPLORE</p><h2 id="scene-title">Terrain & water</h2><p id="question"></p>
+          <label for="primary" id="primary-label"></label><div class="slider-row"><input id="primary" type="range"><output id="primary-value" for="primary"></output></div>
+          <label for="secondary" id="secondary-label"></label><div class="slider-row"><input id="secondary" type="range"><output id="secondary-value" for="secondary"></output></div>
+          <a id="lesson" class="lesson-link" href="../lite/lab/index.html?path=07_terrain_water.ipynb">Open the notebook <span>↗</span></a>
+        </div>
+      </aside>
+      <section class="viewport-panel" aria-label="Interactive scene">
+        <div class="viewport-top"><span id="scene-tag">SYNTHETIC TERRAIN / 3D</span><span class="status"><i></i> LOCAL RENDERING</span></div>
+        <div id="viewport"><canvas id="world" tabindex="0" aria-label="3D scene. Drag to orbit, scroll to zoom, or focus and use arrow keys and plus or minus."></canvas><div id="fallback" hidden><h2>Explore this world in the notebook</h2><p>This browser could not start WebGL. The Python lessons contain static maps, 3D plots and explanations.</p><a href="../lite/lab/index.html?path=00_start_here.ipynb">Open learning guide ↗</a></div><div class="scene-overlay"><span id="metric"></span><p id="metric-detail"></p></div></div>
+        <div class="viewport-bottom"><span>DRAG TO ORBIT <span class="divider">/</span> SCROLL TO ZOOM</span><div><button id="play" aria-pressed="false">Play motion</button><button id="reset">Reset view</button></div></div>
+      </section>
+    </div>
+    <section class="notes"><div><p class="eyebrow">WHAT YOU ARE SEEING</p><p id="explanation"></p></div><div><p class="eyebrow">FOLLOW THE IDEA</p><p id="connection"></p><a id="source" href="https://github.com/magiccreator-ai/awesome-gpt-6-astra">Inspiration & creator credit ↗</a></div></section>
+  </main>
+  <footer><span>JupyterLite Astra Demos · Learn by making a prediction.</span><span>Educational models · credited geographic data · no API keys</span></footer>
+  <noscript><p>Enable JavaScript for interactive scenes, or read the notebooks in the repository.</p></noscript>
+  <script type="module" src="worlds.js"></script>
+</body>
+</html>

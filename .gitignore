@@ -1,0 +1,9 @@
+.venv/
+_build/
+tmp/
+__pycache__/
+.ipynb_checkpoints/
+.jupyterlite.doit.db*
+*.pyc
+node_modules/
+test-results/

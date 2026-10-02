@@ -1,17 +1,32 @@
 version: 1
 project:
   title: JupyterLite Astra Demos
-  description: Browser-executable educational notebooks inspired by selected demos cataloged in Awesome GPT-6 Astra.
+  description: Visual learning through geospatial notebooks, interactive maps, animations and procedural 3D worlds inspired by Awesome GPT-6 Astra.
   github: jltobias/JupyterLite-Astra-demos
   toc:
     - file: content/index.md
-    - title: Demos
+    - file: content/notebooks/00_start_here.ipynb
+    - title: Motion and systems
       children:
         - file: content/notebooks/01_aquarium_motion.ipynb
         - file: content/notebooks/02_robot_duel.ipynb
         - file: content/notebooks/03_procedural_train.ipynb
         - file: content/notebooks/04_glass_drying.ipynb
         - file: content/notebooks/05_model_railroad.ipynb
+    - title: Maps and spatial reasoning
+      children:
+        - file: content/notebooks/06_globe_projections.ipynb
+        - file: content/notebooks/07_terrain_water.ipynb
+        - file: content/notebooks/08_neighborhood_3d.ipynb
+        - file: content/notebooks/09_route_networks.ipynb
+    - title: World creation and uncertainty
+      children:
+        - file: content/notebooks/10_ocean_flow.ipynb
+        - file: content/notebooks/11_point_cloud_repair.ipynb
+        - file: content/notebooks/12_voxel_world.ipynb
+        - file: content/notebooks/13_lorenz_chaos.ipynb
+        - file: content/notebooks/14_spatial_interpolation.ipynb
+        - file: content/notebooks/15_sunlight_shadows.ipynb
 site:
   template: book-theme
   title: JupyterLite Astra Demos
