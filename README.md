@@ -6,7 +6,17 @@
 
 A browser-based learning gallery for geospatial reasoning, visual explanations, animation and procedural 3D world creation, inspired by [Awesome GPT-6 Astra](https://github.com/magiccreator-ai/awesome-gpt-6-astra). **16 notebooks · 6 interactive 3D scenes · no API keys.**
 
-[**Explore the 3D World Lab →**](https://jltobias.github.io/JupyterLite-Astra-demos/demos/) · [**Start learning in JupyterLite →**](https://jltobias.github.io/JupyterLite-Astra-demos/lite/lab/index.html?path=00_start_here.ipynb) · [**Read the illustrated book →**](https://jltobias.github.io/JupyterLite-Astra-demos/)
+[**Read the Jupyter Book →**](https://jltobias.github.io/JupyterLite-Astra-demos/) · [**Open JupyterLite notebooks →**](https://jltobias.github.io/JupyterLite-Astra-demos/lite/lab/index.html) · [**Explore the 3D World Lab →**](https://jltobias.github.io/JupyterLite-Astra-demos/demos/)
+
+## Live Jupyter Book and notebooks
+
+| Site | Live link | What you can do |
+|---|---|---|
+| **Jupyter Book** | [Read the complete book](https://jltobias.github.io/JupyterLite-Astra-demos/) | Browse the introduction and all 16 notebook chapters, with explanations and saved figures. |
+| **JupyterLite** | [Launch the notebook environment](https://jltobias.github.io/JupyterLite-Astra-demos/lite/lab/index.html) | Run and edit all 16 Python notebooks directly in your browser. |
+| **3D World Lab** | [Explore the interactive demos](https://jltobias.github.io/JupyterLite-Astra-demos/demos/) | Orbit and manipulate six 3D scenes without starting a Python kernel. |
+
+Start with the [Jupyter Book learning guide](https://jltobias.github.io/JupyterLite-Astra-demos/start-here/) or [run that guide in JupyterLite](https://jltobias.github.io/JupyterLite-Astra-demos/lite/lab/index.html?path=00_start_here.ipynb). The book groups the lessons into **Motion and systems**, **Maps and spatial reasoning**, and **World creation and uncertainty**. Individual notebook launch links appear in the gallery below.
 
 > These are original educational reinterpretations and extensions. They do not reproduce creators' code, prompts, assets or benchmark results, and do not establish the limits of GPT-6 Astra's capabilities. The upstream directory contains creator-reported demonstrations. Our cities, terrain, sensor readings and simulations are synthetic unless explicitly described otherwise; a convincing rendering is not evidence of geographic accuracy. Running these demos does not call an AI model.
 
@@ -23,7 +33,7 @@ The World Lab runs directly in your browser with a locally bundled Three.js rend
 | [Voxel island](https://jltobias.github.io/JupyterLite-Astra-demos/demos/?scene=voxel) | Waterline, terrain relief | Continuous fields become occupied cells and materials |
 | [Lorenz attractor](https://jltobias.github.io/JupyterLite-Astra-demos/demos/?scene=chaos) | Convection parameter, visible trajectory | Close starting states can follow different futures |
 
-These are this repository's deployment URLs. New paths become available when this revision is published by the Pages workflow. Creator-hosted demonstrations are linked separately below and in the notebooks.
+The Jupyter Book, JupyterLite notebooks and World Lab are published together by the GitHub Pages workflow. Creator-hosted demonstrations are linked separately below and in the notebooks.
 
 ## Notebook gallery
 

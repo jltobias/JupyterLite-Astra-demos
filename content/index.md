@@ -4,7 +4,12 @@
 
 **See the idea. Change the world. Understand the model.**
 
-Explore 16 browser-executable notebooks and six interactive 3D scenes, inspired by the
+This **Jupyter Book** brings together an introduction and all **16 notebook chapters**, with saved
+figures and guided explanations. Use the chapter navigation to read the book, or open
+[**JupyterLite**](https://jltobias.github.io/JupyterLite-Astra-demos/lite/lab/index.html) to run and edit
+the notebooks in your browser.
+
+Explore the notebooks and six interactive 3D scenes, inspired by the
 [Awesome GPT-6 Astra](https://github.com/magiccreator-ai/awesome-gpt-6-astra) community directory.
 These original educational experiments make geospatial reasoning, procedural worlds, motion and
 uncertainty visible through small, inspectable mathematical models.
